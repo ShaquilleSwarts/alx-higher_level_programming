@@ -10,7 +10,7 @@ class Rectangle:
             Print_symbol (any): Symbol used for String representation.
     """
 
-    number_of_instances = 0 
+    number_of_instances = 0
     print_symbol = '#'
 
     def __init__(self, width=0, height=0):
@@ -84,4 +84,3 @@ class Rectangle:
         """Print messages for the deletion of a rectangle"""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-
