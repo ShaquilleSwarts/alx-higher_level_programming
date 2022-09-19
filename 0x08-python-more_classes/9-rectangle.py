@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 8-rectangle.py
+# 9-rectangle.py
 """Define rectangle class"""
 
 
@@ -80,6 +80,15 @@ class Rectangle:
             return (rect_1)
         return (rect_2)
 
+    @classmethod
+    def square(cls, size=0):
+        """Returns new Rectangle with width and height equal in size.
+
+        Args:
+            size (int): The width and height
+        """
+        return (cls(size, size))
+
     def __str__(self):
         """return string representation.
 
@@ -104,4 +113,3 @@ class Rectangle:
         """Print messages for the deletion of a rectangle"""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-
