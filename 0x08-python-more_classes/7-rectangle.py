@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-# 6-rectangle.py
+# 7-rectangle.py
 """Define rectangle class"""
 
 
 class Rectangle:
     """represents a rectangle.
+
     Attributes:
             number_of_instances (int): Number of Instances
             Print_symbol (any): Symbol used for String representation.
@@ -58,7 +59,7 @@ class Rectangle:
         """returns Perimeter"""
         if self.__width == 0 or self.__height == 0:
             return (0)
-        return ((self.__width * 2)+(self.__height * 2))
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
         """return string representation.
@@ -69,7 +70,7 @@ class Rectangle:
 
         rect = []
         for i in range(self.__height):
-            [rect.append('#') for j in range(self.__width)]
+            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
