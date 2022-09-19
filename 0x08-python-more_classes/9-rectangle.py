@@ -2,10 +2,6 @@
 # 9-rectangle.py
 """Define rectangle class"""
 
-
-from curses.textpad import rectangle
-
-
 class Rectangle:
     """represents a rectangle.
 
