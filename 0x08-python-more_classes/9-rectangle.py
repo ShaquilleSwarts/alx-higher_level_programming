@@ -3,6 +3,9 @@
 """Define rectangle class"""
 
 
+from curses.textpad import rectangle
+
+
 class Rectangle:
     """represents a rectangle.
 
@@ -98,6 +101,7 @@ class Rectangle:
         return (rect)
 
     def __del__(self):
-        """Print message for the deletion of a rectangle"""
+        """Print messages for the deletion of a rectangle"""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
+
