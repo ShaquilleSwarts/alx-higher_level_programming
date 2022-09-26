@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # 7-base_geometry
-"""defines class"""
-
+"""Defines a base geometry class BaseGeometry."""
 
 class BaseGeometry():
     """Resresent base geometry"""
