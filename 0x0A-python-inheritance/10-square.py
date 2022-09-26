@@ -55,6 +55,9 @@ class Rectangle(BaseGeometry):
         return string
 
 
+"""Defines a rectangle subclass Square"""
+
+
 class Square(Rectangle):
     """Represents Square based on Rectangle"""
 
