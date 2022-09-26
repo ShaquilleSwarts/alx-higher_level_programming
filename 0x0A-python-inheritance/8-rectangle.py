@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 7-base_geometry
+# 9prectangle.py
 """defines class"""
 
 
@@ -12,7 +12,6 @@ class BaseGeometry():
 
     def integer_validator(self, name, value):
         """Validate a parameter as an integer.
-
         Args:
             name (str): The name of the parameter.
             value (int): The parameter to validate.
