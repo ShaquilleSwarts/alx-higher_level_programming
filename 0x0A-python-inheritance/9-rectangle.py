@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 8-rectangle.py
+# 9-rectangle.py
 """defines class"""
 
 
@@ -36,7 +36,17 @@ class Rectangle(BaseGeometry):
             Width (int): The width of the new Rectangle
             Height (int): The height of the new Rectangle
         """
-        self.integer_validator("width", width)
+        super().integer_validator("width", width)
         self.__width = width
-        self.integer_validator("height", height)
+        super().integer_validator("height", height)
         self.__height = height
+
+    def area(self):
+        """returns the area of the rectangle"""
+        return self.__width * self.__height
+
+    def __str__(self):
+        """Returns the print() and str() representation of rectangle"""
+        string = "[" + str(self.__class__.__name__) + "] "
+        string += str(self.__width) + "/" + str(self.__height)
+        return string
