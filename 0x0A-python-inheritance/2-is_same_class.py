@@ -2,6 +2,7 @@
 # 2-is_same-class.py
 """checks class-defining function"""
 
+
 def is_same_class(obj, a_class):
     """Check if an object is exactly an instance of given class.
 
